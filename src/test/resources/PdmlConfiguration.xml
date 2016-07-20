@@ -1,0 +1,14 @@
+<configuration>
+    <input>/Users/onicolas/dev/projects/wireshark-pdml/src/test/resources/pdml.xml</input>
+    <separator>|</separator>
+    <filters>
+        <filter type="field" name="http.request.uri" value="/betslip/1.10/place"/>
+        <filter type="protocol" name="json" value="JavaScript Object Notation: application/json"/>
+    </filters>
+    <outputs>
+        <output type="field" name="timestamp"/>
+        <output type="field" name="http.request.method"/>
+        <output type="field" name="http.request.uri"/>
+        <output type="protocol" name="json" convertor="jsonConvertor"/>
+    </outputs>
+</configuration>

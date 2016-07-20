@@ -1,0 +1,10 @@
+@XmlAccessorType(XmlAccessType.FIELD)
+
+package com.tshark.automation.pdml.type;
+
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+
+
+

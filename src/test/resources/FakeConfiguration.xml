@@ -1,0 +1,12 @@
+<configuration>
+    <input>boubou.xml</input>
+    <separator>|</separator>
+    <filters>
+        <filter type="field" name="http.request.uri" value="POST"/>
+    </filters>
+    <outputs>
+        <output type="field" name="http.request.uri"/>
+        <output type="field" name="http.request.post" convertor="defaultField"/>
+        <output type="protocol" name="json" convertor="defaultProtocol"/>
+    </outputs>
+</configuration>

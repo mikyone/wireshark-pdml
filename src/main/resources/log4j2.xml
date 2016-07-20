@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        <Console name="MyConsole" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d %p %c{1.} %m%n"/>
+        </Console>
+        <File name="MyFile" fileName="logs/details.log" append="false">
+            <PatternLayout pattern="%d %p %c{1.} %m%n"/>
+        </File>
+        <File name="MyFileResult" fileName="logs/results.log" append="false">
+            <PatternLayout pattern="%msg%n" />
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="debug">
+            <AppenderRef ref="MyFileResult" level="info"/>
+            <AppenderRef ref="MyFile" level="debug"/>
+            <AppenderRef ref="MyConsole" level="debug" />
+        </Root>
+    </Loggers>
+</Configuration>

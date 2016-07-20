@@ -1,0 +1,249 @@
+<packet>
+    <proto name="geninfo" pos="0" showname="General information" size="458">
+        <field name="num" pos="0" show="146" showname="Number" value="92" size="458"/>
+        <field name="len" pos="0" show="458" showname="Frame Length" value="1ca" size="458"/>
+        <field name="caplen" pos="0" show="458" showname="Captured Length" value="1ca" size="458"/>
+        <field name="timestamp" pos="0" show="Aug 27, 2015 10:51:59.095329000 IST" showname="Captured Time" value="1440669119.095329000" size="458"/>
+    </proto>
+    <proto name="frame" showname="Frame 146: 458 bytes on wire (3664 bits), 458 bytes captured (3664 bits) on interface 0" size="458" pos="0">
+        <field name="frame.interface_id" showname="Interface id: 0 (rvi0)" size="0" pos="0" show="0"/>
+        <field name="frame.encap_type" showname="Encapsulation type: USER 2 (47)" size="0" pos="0" show="47"/>
+        <field name="frame.time" showname="Arrival Time: Aug 27, 2015 10:51:59.095329000 IST" size="0" pos="0" show="Aug 27, 2015 10:51:59.095329000 IST"/>
+        <field name="frame.offset_shift" showname="Time shift for this packet: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+        <field name="frame.time_epoch" showname="Epoch Time: 1440669119.095329000 seconds" size="0" pos="0" show="1440669119.095329000"/>
+        <field name="frame.time_delta" showname="Time delta from previous captured frame: 0.000548000 seconds" size="0" pos="0" show="0.000548000"/>
+        <field name="frame.time_delta_displayed" showname="Time delta from previous displayed frame: 6.822004000 seconds" size="0" pos="0" show="6.822004000"/>
+        <field name="frame.time_relative" showname="Time since reference or first frame: 17.662001000 seconds" size="0" pos="0" show="17.662001000"/>
+        <field name="frame.number" showname="Frame Number: 146" size="0" pos="0" show="146"/>
+        <field name="frame.len" showname="Frame Length: 458 bytes (3664 bits)" size="0" pos="0" show="458"/>
+        <field name="frame.cap_len" showname="Capture Length: 458 bytes (3664 bits)" size="0" pos="0" show="458"/>
+        <field name="frame.marked" showname="Frame is marked: False" size="0" pos="0" show="0"/>
+        <field name="frame.ignored" showname="Frame is ignored: False" size="0" pos="0" show="0"/>
+        <field name="frame.protocols" showname="Protocols in frame: user_dlt:pktap:eth:ethertype:ip:tcp:http:json" size="0" pos="0" show="user_dlt:pktap:eth:ethertype:ip:tcp:http:json"/>
+    </proto>
+    <proto name="user_dlt" showname="DLT: 149, Payload: pktap (PKTAP packet header)" size="458" pos="0"/>
+    <proto name="pktap" showname="PKTAP packet header" size="156" pos="0">
+        <field name="pktap.hdrlen" showname="Header length: 156" size="4" pos="0" show="156" value="9c000000"/>
+        <field name="pktap.rectype" showname="Record type: 1" size="4" pos="4" show="1" value="01000000"/>
+        <field name="pktap.dlt" showname="DLT: 1" size="4" pos="8" show="1" value="01000000"/>
+        <field name="pktap.ifname" showname="Interface name: en0" size="24" pos="12" show="en0" value="656e30000000000000000000000000000000000000000000"/>
+        <field name="pktap.flags" showname="Flags: 0x00002002" size="4" pos="36" show="8194" value="02200000"/>
+        <field name="pktap.pfamily" showname="Protocol family: 2" size="4" pos="40" show="2" value="02000000"/>
+        <field name="pktap.llhdrlen" showname="Link-layer header length: 14" size="4" pos="44" show="14" value="0e000000"/>
+        <field name="pktap.lltrlrlen" showname="Link-layer trailer length: 0" size="4" pos="48" show="0" value="00000000"/>
+        <field name="pktap.pid" showname="Process ID: 2403" size="4" pos="52" show="2403" value="63090000"/>
+        <field name="pktap.cmdname" showname="Command name: PPNSportsbookUn" size="20" pos="56" show="PPNSportsbookUn" value="50504e53706f727473626f6f6b556e0000000000"/>
+        <field name="pktap.svc_class" showname="Service class: 0" size="4" pos="76" show="0" value="00000000"/>
+        <field name="pktap.iftype" showname="Interface type: 0" size="2" pos="80" show="0" value="0000"/>
+        <field name="pktap.ifunit" showname="Interface unit: 0" size="2" pos="82" show="0" value="0000"/>
+        <field name="pktap.epid" showname="Effective process ID: 4294967295" size="4" pos="84" show="4294967295" value="ffffffff"/>
+        <field name="pktap.ecmdname" showname="Effective command name: " size="20" pos="88" show="" value="0000000000000000000000000000000000000000"/>
+    </proto>
+    <proto name="eth" showname="Ethernet II, Src: Apple_c0:ec:d8 (84:78:8b:c0:ec:d8), Dst: Vmware_a7:36:61 (00:50:56:a7:36:61)" size="14" pos="156">
+        <field name="eth.dst" showname="Destination: Vmware_a7:36:61 (00:50:56:a7:36:61)" size="6" pos="156" show="00:50:56:a7:36:61" value="005056a73661">
+            <field name="eth.dst_resolved" showname="Destination (resolved): Vmware_a7:36:61" hide="yes" size="6" pos="156" show="Vmware_a7:36:61" value="005056a73661"/>
+            <field name="eth.addr" showname="Address: Vmware_a7:36:61 (00:50:56:a7:36:61)" size="6" pos="156" show="00:50:56:a7:36:61" value="005056a73661"/>
+            <field name="eth.addr_resolved" showname="Address (resolved): Vmware_a7:36:61" hide="yes" size="6" pos="156" show="Vmware_a7:36:61" value="005056a73661"/>
+            <field name="eth.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" size="3" pos="156" show="0" value="0" unmaskedvalue="005056"/>
+            <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="156" show="0" value="0" unmaskedvalue="005056"/>
+        </field>
+        <field name="eth.src" showname="Source: Apple_c0:ec:d8 (84:78:8b:c0:ec:d8)" size="6" pos="162" show="84:78:8b:c0:ec:d8" value="84788bc0ecd8">
+            <field name="eth.src_resolved" showname="Source (resolved): Apple_c0:ec:d8" hide="yes" size="6" pos="162" show="Apple_c0:ec:d8" value="84788bc0ecd8"/>
+            <field name="eth.addr" showname="Address: Apple_c0:ec:d8 (84:78:8b:c0:ec:d8)" size="6" pos="162" show="84:78:8b:c0:ec:d8" value="84788bc0ecd8"/>
+            <field name="eth.addr_resolved" showname="Address (resolved): Apple_c0:ec:d8" hide="yes" size="6" pos="162" show="Apple_c0:ec:d8" value="84788bc0ecd8"/>
+            <field name="eth.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" size="3" pos="162" show="0" value="0" unmaskedvalue="84788b"/>
+            <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="162" show="0" value="0" unmaskedvalue="84788b"/>
+        </field>
+        <field name="eth.type" showname="Type: IP (0x0800)" size="2" pos="168" show="2048" value="0800"/>
+    </proto>
+    <proto name="ip" showname="Internet Protocol Version 4, Src: 10.104.103.68 (10.104.103.68), Dst: 185.20.95.80 (185.20.95.80)" size="20" pos="170">
+        <field name="ip.version" showname="Version: 4" size="1" pos="170" show="4" value="45"/>
+        <field name="ip.hdr_len" showname="Header Length: 20 bytes" size="1" pos="170" show="20" value="45"/>
+        <field name="ip.dsfield" showname="Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))" size="1" pos="171" show="0" value="00">
+            <field name="ip.dsfield.dscp" showname="0000 00.. = Differentiated Services Codepoint: Default (0x00)" size="1" pos="171" show="0" value="0" unmaskedvalue="00"/>
+            <field name="ip.dsfield.ecn" showname=".... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)" size="1" pos="171" show="0" value="0" unmaskedvalue="00"/>
+        </field>
+        <field name="ip.len" showname="Total Length: 288" size="2" pos="172" show="288" value="0120"/>
+        <field name="ip.id" showname="Identification: 0x8adf (35551)" size="2" pos="174" show="35551" value="8adf"/>
+        <field name="ip.flags" showname="Flags: 0x02 (Don&apos;t Fragment)" size="1" pos="176" show="2" value="40">
+            <field name="ip.flags.rb" showname="0... .... = Reserved bit: Not set" size="1" pos="176" show="0" value="40"/>
+            <field name="ip.flags.df" showname=".1.. .... = Don&apos;t fragment: Set" size="1" pos="176" show="1" value="40"/>
+            <field name="ip.flags.mf" showname="..0. .... = More fragments: Not set" size="1" pos="176" show="0" value="40"/>
+        </field>
+        <field name="ip.frag_offset" showname="Fragment offset: 0" size="2" pos="176" show="0" value="4000"/>
+        <field name="ip.ttl" showname="Time to live: 64" size="1" pos="178" show="64" value="40"/>
+        <field name="ip.proto" showname="Protocol: TCP (6)" size="1" pos="179" show="6" value="06"/>
+        <field name="ip.checksum" showname="Header checksum: 0x24e8 [validation disabled]" size="2" pos="180" show="9448" value="24e8">
+            <field name="ip.checksum_good" showname="Good: False" size="2" pos="180" show="0" value="24e8"/>
+            <field name="ip.checksum_bad" showname="Bad: False" size="2" pos="180" show="0" value="24e8"/>
+        </field>
+        <field name="ip.src" showname="Source: 10.104.103.68 (10.104.103.68)" size="4" pos="182" show="10.104.103.68" value="0a686744"/>
+        <field name="ip.addr" showname="Source or Destination Address: 10.104.103.68 (10.104.103.68)" hide="yes" size="4" pos="182" show="10.104.103.68" value="0a686744"/>
+        <field name="ip.src_host" showname="Source Host: 10.104.103.68" hide="yes" size="4" pos="182" show="10.104.103.68" value="0a686744"/>
+        <field name="ip.host" showname="Source or Destination Host: 10.104.103.68" hide="yes" size="4" pos="182" show="10.104.103.68" value="0a686744"/>
+        <field name="ip.dst" showname="Destination: 185.20.95.80 (185.20.95.80)" size="4" pos="186" show="185.20.95.80" value="b9145f50"/>
+        <field name="ip.addr" showname="Source or Destination Address: 185.20.95.80 (185.20.95.80)" hide="yes" size="4" pos="186" show="185.20.95.80" value="b9145f50"/>
+        <field name="ip.dst_host" showname="Destination Host: 185.20.95.80" hide="yes" size="4" pos="186" show="185.20.95.80" value="b9145f50"/>
+        <field name="ip.host" showname="Source or Destination Host: 185.20.95.80" hide="yes" size="4" pos="186" show="185.20.95.80" value="b9145f50"/>
+        <field name="" show="Source GeoIP: Unknown" size="4" pos="182" value="0a686744"/>
+        <field name="" show="Destination GeoIP: Unknown" size="4" pos="186" value="b9145f50"/>
+    </proto>
+    <proto name="tcp" showname="Transmission Control Protocol, Src Port: 63252 (63252), Dst Port: 80 (80), Seq: 2120, Ack: 374, Len: 248" size="20" pos="190">
+        <field name="tcp.srcport" showname="Source Port: 63252 (63252)" size="2" pos="190" show="63252" value="f714"/>
+        <field name="tcp.dstport" showname="Destination Port: 80 (80)" size="2" pos="192" show="80" value="0050"/>
+        <field name="tcp.port" showname="Source or Destination Port: 63252" hide="yes" size="2" pos="190" show="63252" value="f714"/>
+        <field name="tcp.port" showname="Source or Destination Port: 80" hide="yes" size="2" pos="192" show="80" value="0050"/>
+        <field name="tcp.stream" showname="Stream index: 5" size="0" pos="190" show="5"/>
+        <field name="tcp.len" showname="TCP Segment Len: 248" size="1" pos="202" show="248" value="50"/>
+        <field name="tcp.seq" showname="Sequence number: 2120    (relative sequence number)" size="4" pos="194" show="2120" value="70d65d32"/>
+        <field name="tcp.nxtseq" showname="Next sequence number: 2368    (relative sequence number)" size="0" pos="190" show="2368"/>
+        <field name="tcp.ack" showname="Acknowledgment number: 374    (relative ack number)" size="4" pos="198" show="374" value="1265c731"/>
+        <field name="tcp.hdr_len" showname="Header Length: 20 bytes" size="1" pos="202" show="20" value="50"/>
+        <field name="tcp.flags" showname=".... 0000 0001 1000 = Flags: 0x018 (PSH, ACK)" size="2" pos="202" show="24" value="18" unmaskedvalue="5018">
+            <field name="tcp.flags.res" showname="000. .... .... = Reserved: Not set" size="1" pos="202" show="0" value="0" unmaskedvalue="50"/>
+            <field name="tcp.flags.ns" showname="...0 .... .... = Nonce: Not set" size="1" pos="202" show="0" value="0" unmaskedvalue="50"/>
+            <field name="tcp.flags.cwr" showname=".... 0... .... = Congestion Window Reduced (CWR): Not set" size="1" pos="203" show="0" value="0" unmaskedvalue="18"/>
+            <field name="tcp.flags.ecn" showname=".... .0.. .... = ECN-Echo: Not set" size="1" pos="203" show="0" value="0" unmaskedvalue="18"/>
+            <field name="tcp.flags.urg" showname=".... ..0. .... = Urgent: Not set" size="1" pos="203" show="0" value="0" unmaskedvalue="18"/>
+            <field name="tcp.flags.ack" showname=".... ...1 .... = Acknowledgment: Set" size="1" pos="203" show="1" value="1" unmaskedvalue="18"/>
+            <field name="tcp.flags.push" showname=".... .... 1... = Push: Set" size="1" pos="203" show="1" value="1" unmaskedvalue="18"/>
+            <field name="tcp.flags.reset" showname=".... .... .0.. = Reset: Not set" size="1" pos="203" show="0" value="0" unmaskedvalue="18"/>
+            <field name="tcp.flags.syn" showname=".... .... ..0. = Syn: Not set" size="1" pos="203" show="0" value="0" unmaskedvalue="18"/>
+            <field name="tcp.flags.fin" showname=".... .... ...0 = Fin: Not set" size="1" pos="203" show="0" value="0" unmaskedvalue="18"/>
+        </field>
+        <field name="tcp.window_size_value" showname="Window size value: 65535" size="2" pos="204" show="65535" value="ffff"/>
+        <field name="tcp.window_size" showname="Calculated window size: 65535" size="2" pos="204" show="65535" value="ffff"/>
+        <field name="tcp.window_size_scalefactor" showname="Window size scaling factor: -2 (no window scaling used)" size="2" pos="204" show="-2" value="ffff"/>
+        <field name="tcp.checksum" showname="Checksum: 0x1107 [validation disabled]" size="2" pos="206" show="4359" value="1107">
+            <field name="tcp.checksum_good" showname="Good Checksum: False" size="2" pos="206" show="0" value="1107"/>
+            <field name="tcp.checksum_bad" showname="Bad Checksum: False" size="2" pos="206" show="0" value="1107"/>
+        </field>
+        <field name="tcp.urgent_pointer" showname="Urgent pointer: 0" size="2" pos="208" show="0" value="0000"/>
+        <field name="tcp.analysis" showname="SEQ/ACK analysis" size="0" pos="190" show="" value="">
+            <field name="tcp.analysis.initial_rtt" showname="iRTT: 0.003925000 seconds" size="0" pos="190" show="0.003925000"/>
+            <field name="tcp.analysis.bytes_in_flight" showname="Bytes in flight: 1184" size="0" pos="190" show="1184"/>
+        </field>
+        <field name="tcp.segment_data" showname="TCP segment data (248 bytes)" size="248" pos="210" show="7b:22:62:65:74:73:22:3a:5b:7b:22:74:79:70:65:22:3a:22:53:47:4c:22:2c:22:73:74:61:6b:65:50:65:72:4c:69:6e:65:22:3a:31:30:2c:22:6c:65:67:54:79:70:65:22:3a:22:57:22:2c:22:6c:65:67:73:22:3a:5b:7b:22:73:6f:72:74:22:3a:22:2d:2d:22:2c:22:70:61:72:74:73:22:3a:5b:7b:22:6f:75:74:63:6f:6d:65:22:3a:32:36:39:34:32:2c:22:70:72:69:63:65:22:3a:7b:22:6e:75:6d:22:3a:38:2c:22:64:65:6e:22:3a:31:31:2c:22:74:79:70:65:22:3a:22:4c:22:7d:7d:5d:7d:5d:7d:5d:2c:22:63:68:61:6e:6e:65:6c:22:3a:22:68:22:2c:22:74:6f:6b:65:6e:22:3a:22:2b:6c:58:62:47:5a:57:66:36:44:57:55:77:65:48:4b:70:65:34:73:36:34:39:79:57:5a:63:42:57:70:79:4f:59:35:5c:2f:74:54:35:62:78:47:58:37:57:49:62:6d:4f:46:4a:36:41:6c:6b:79:42:2b:47:74:34:69:6f:62:66:30:6d:31:6e:74:7a:4a:47:46:77:3d:3d:22:7d" value="7b2262657473223a5b7b2274797065223a2253474c222c227374616b655065724c696e65223a31302c226c656754797065223a2257222c226c656773223a5b7b22736f7274223a222d2d222c227061727473223a5b7b226f7574636f6d65223a32363934322c227072696365223a7b226e756d223a382c2264656e223a31312c2274797065223a224c227d7d5d7d5d7d5d2c226368616e6e656c223a2268222c22746f6b656e223a222b6c5862475a5766364457557765484b7065347336343979575a63425770794f59355c2f74543562784758375749626d4f464a36416c6b79422b477434696f6266306d316e747a4a4746773d3d227d"/>
+    </proto>
+    <proto name="fake-field-wrapper">
+        <field name="tcp.segments" showname="2 Reassembled TCP Segments (1184 bytes): #145(936), #146(248)" size="1184" pos="0" show="" value="">
+            <field name="tcp.segment" showname="Frame: 145, payload: 0-935 (936 bytes)" size="936" pos="0" show="145" value="504f5354202f626574736c69702f312e31302f706c61636520485454502f312e310d0a486f73743a206170692d716130332e746573742e7061646479706f7765722e636f6d0d0a4163636570743a202a2f2a0d0a4163636570742d456e636f64696e673a20677a69702c206465666c6174650d0a436f6e74656e742d4c656e6774683a203234380d0a436f6e74656e742d547970653a206170706c69636174696f6e2f6a736f6e0d0a4163636570742d4c616e67756167653a20656e3b713d310d0a436f6f6b69653a205f5f6c6c5f77656273646b5f63643d7b7d3b205f5f6c6c5f77656273646b5f6373693d33313b205f5f6c6c5f77656273646b5f6373713d33313b205f5f6c6c5f77656273646b5f6373743d313434303636333133383b205f5f6c6c5f77656273646b5f6373753d25323266646436613332382d396333352d346565342d316537342d6637653538326134333464622532323b205f5f6c6c5f77656273646b5f666c3d5b5d3b205f5f6c6c5f77656273646b5f6964733d7b7d3b205f5f6c6c5f77656273646b5f69753d25323266336530333532352d343439332d666561332d623636382d3839623434616536323034642532323b205f5f6c6c5f77656273646b5f6c63743d313434303636333237363232323b205f5f6c6c5f77656273646b5f6c6f743d313434303636333133383b205f5f6c6c5f77656273646b5f70613d313433393830363036363b2061635f70726566733d752533446a6f7375655f77656c63685f736f6c7325374366697273746e616d652533444a6f7375652537436c6173746e616d6525334457656c6368253743636379253344455552253743726567696f6e2533444945253743636f756e747279436f6465253344494525374372656d656d62657225334466616c73652537436465706f73697450726f6d707456616c7565253344302e30303b206c6f63616c79746963732e6a733d313b2050505f4c4f47494e3d2532426c5862475a5766364457557765484b7065347336343979575a63425770794f593525324674543562784758375749626d4f464a36416c6b7942253242477434696f6266306d316e747a4a4746772533442533443b20707049443d367730574f354d304b70702d5a5673684f69790d0a436f6e6e656374696f6e3a206b6565702d616c6976650d0a557365722d4167656e743a2050504e53706f727473626f6f6b556e6976657273616c2f302e31332e3020286950686f6e653b20694f5320382e312e313b205363616c652f322e3030290d0a0d0a"/>
+            <field name="tcp.segment" showname="Frame: 146, payload: 936-1183 (248 bytes)" size="248" pos="936" show="146" value="7b2262657473223a5b7b2274797065223a2253474c222c227374616b655065724c696e65223a31302c226c656754797065223a2257222c226c656773223a5b7b22736f7274223a222d2d222c227061727473223a5b7b226f7574636f6d65223a32363934322c227072696365223a7b226e756d223a382c2264656e223a31312c2274797065223a224c227d7d5d7d5d7d5d2c226368616e6e656c223a2268222c22746f6b656e223a222b6c5862475a5766364457557765484b7065347336343979575a63425770794f59355c2f74543562784758375749626d4f464a36416c6b79422b477434696f6266306d316e747a4a4746773d3d227d"/>
+            <field name="tcp.segment.count" showname="Segment count: 2" size="0" pos="0" show="2"/>
+            <field name="tcp.reassembled.length" showname="Reassembled TCP length: 1184" size="0" pos="0" show="1184"/>
+            <field name="tcp.reassembled.data" showname="Reassembled TCP Data: 504f5354202f626574736c69702f312e31302f706c616365..." size="1184" pos="0" show="50:4f:53:54:20:2f:62:65:74:73:6c:69:70:2f:31:2e:31:30:2f:70:6c:61:63:65:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:61:70:69:2d:71:61:30:33:2e:74:65:73:74:2e:70:61:64:64:79:70:6f:77:65:72:2e:63:6f:6d:0d:0a:41:63:63:65:70:74:3a:20:2a:2f:2a:0d:0a:41:63:63:65:70:74:2d:45:6e:63:6f:64:69:6e:67:3a:20:67:7a:69:70:2c:20:64:65:66:6c:61:74:65:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:32:34:38:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:6a:73:6f:6e:0d:0a:41:63:63:65:70:74:2d:4c:61:6e:67:75:61:67:65:3a:20:65:6e:3b:71:3d:31:0d:0a:43:6f:6f:6b:69:65:3a:20:5f:5f:6c:6c:5f:77:65:62:73:64:6b:5f:63:64:3d:7b:7d:3b:20:5f:5f:6c:6c:5f:77:65:62:73:64:6b:5f:63:73:69:3d:33:31:3b:20:5f:5f:6c:6c:5f:77:65:62:73:64:6b:5f:63:73:71:3d:33:31:3b:20:5f:5f:6c:6c:5f:77:65:62:73:64:6b:5f:63:73:74:3d:31:34:34:30:36:36:33:31:33:38:3b:20:5f:5f:6c:6c:5f:77:65:62:73:64:6b:5f:63:73:75:3d:25:32:32:66:64:64:36:61:33:32:38:2d:39:63:33:35:2d:34:65:65:34:2d:31:65:37:34:2d:66:37:65:35:38:32:61:34:33:34:64:62:25:32:32:3b:20:5f:5f:6c:6c:5f:77:65:62:73:64:6b:5f:66:6c:3d:5b:5d:3b:20:5f:5f:6c:6c:5f:77:65:62:73:64:6b:5f:69:64:73:3d:7b:7d:3b:20:5f:5f:6c:6c:5f:77:65:62:73:64:6b:5f:69:75:3d:25:32:32:66:33:65:30:33:35:32:35:2d:34:34:39:33:2d:66:65:61:33:2d:62:36:36:38:2d:38:39:62:34:34:61:65:36:32:30:34:64:25:32:32:3b:20:5f:5f:6c:6c:5f:77:65:62:73:64:6b:5f:6c:63:74:3d:31:34:34:30:36:36:33:32:37:36:32:32:32:3b:20:5f:5f:6c:6c:5f:77:65:62:73:64:6b:5f:6c:6f:74:3d:31:34:34:30:36:36:33:31:33:38:3b:20:5f:5f:6c:6c:5f:77:65:62:73:64:6b:5f:70:61:3d:31:34:33:39:38:30:36:30:36:36:3b:20:61:63:5f:70:72:65:66:73:3d:75:25:33:44:6a:6f:73:75:65:5f:77:65:6c:63:68:5f:73:6f:6c:73:25:37:43:66:69:72:73:74:6e:61:6d:65:25:33:44:4a:6f:73:75:65:25:37:43:6c:61:73:74:6e:61:6d:65:25:33:44:57:65:6c:63:68:25:37:43:63:63:79:25:33:44:45:55:52:25:37:43:72:65:67:69:6f:6e:25:33:44:49:45:25:37:43:63:6f:75:6e:74:72:79:43:6f:64:65:25:33:44:49:45:25:37:43:72:65:6d:65:6d:62:65:72:25:33:44:66:61:6c:73:65:25:37:43:64:65:70:6f:73:69:74:50:72:6f:6d:70:74:56:61:6c:75:65:25:33:44:30:2e:30:30:3b:20:6c:6f:63:61:6c:79:74:69:63:73:2e:6a:73:3d:31:3b:20:50:50:5f:4c:4f:47:49:4e:3d:25:32:42:6c:58:62:47:5a:57:66:36:44:57:55:77:65:48:4b:70:65:34:73:36:34:39:79:57:5a:63:42:57:70:79:4f:59:35:25:32:46:74:54:35:62:78:47:58:37:57:49:62:6d:4f:46:4a:36:41:6c:6b:79:42:25:32:42:47:74:34:69:6f:62:66:30:6d:31:6e:74:7a:4a:47:46:77:25:33:44:25:33:44:3b:20:70:70:49:44:3d:36:77:30:57:4f:35:4d:30:4b:70:70:2d:5a:56:73:68:4f:69:79:0d:0a:43:6f:6e:6e:65:63:74:69:6f:6e:3a:20:6b:65:65:70:2d:61:6c:69:76:65:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:50:50:4e:53:70:6f:72:74:73:62:6f:6f:6b:55:6e:69:76:65:72:73:61:6c:2f:30:2e:31:33:2e:30:20:28:69:50:68:6f:6e:65:3b:20:69:4f:53:20:38:2e:31:2e:31:3b:20:53:63:61:6c:65:2f:32:2e:30:30:29:0d:0a:0d:0a:7b:22:62:65:74:73:22:3a:5b:7b:22:74:79:70:65:22:3a:22:53:47:4c:22:2c:22:73:74:61:6b:65:50:65:72:4c:69:6e:65:22:3a:31:30:2c:22:6c:65:67:54:79:70:65:22:3a:22:57:22:2c:22:6c:65:67:73:22:3a:5b:7b:22:73:6f:72:74:22:3a:22:2d:2d:22:2c:22:70:61:72:74:73:22:3a:5b:7b:22:6f:75:74:63:6f:6d:65:22:3a:32:36:39:34:32:2c:22:70:72:69:63:65:22:3a:7b:22:6e:75:6d:22:3a:38:2c:22:64:65:6e:22:3a:31:31:2c:22:74:79:70:65:22:3a:22:4c:22:7d:7d:5d:7d:5d:7d:5d:2c:22:63:68:61:6e:6e:65:6c:22:3a:22:68:22:2c:22:74:6f:6b:65:6e:22:3a:22:2b:6c:58:62:47:5a:57:66:36:44:57:55:77:65:48:4b:70:65:34:73:36:34:39:79:57:5a:63:42:57:70:79:4f:59:35:5c:2f:74:54:35:62:78:47:58:37:57:49:62:6d:4f:46:4a:36:41:6c:6b:79:42:2b:47:74:34:69:6f:62:66:30:6d:31:6e:74:7a:4a:47:46:77:3d:3d:22:7d" value="504f5354202f626574736c69702f312e31302f706c61636520485454502f312e310d0a486f73743a206170692d716130332e746573742e7061646479706f7765722e636f6d0d0a4163636570743a202a2f2a0d0a4163636570742d456e636f64696e673a20677a69702c206465666c6174650d0a436f6e74656e742d4c656e6774683a203234380d0a436f6e74656e742d547970653a206170706c69636174696f6e2f6a736f6e0d0a4163636570742d4c616e67756167653a20656e3b713d310d0a436f6f6b69653a205f5f6c6c5f77656273646b5f63643d7b7d3b205f5f6c6c5f77656273646b5f6373693d33313b205f5f6c6c5f77656273646b5f6373713d33313b205f5f6c6c5f77656273646b5f6373743d313434303636333133383b205f5f6c6c5f77656273646b5f6373753d25323266646436613332382d396333352d346565342d316537342d6637653538326134333464622532323b205f5f6c6c5f77656273646b5f666c3d5b5d3b205f5f6c6c5f77656273646b5f6964733d7b7d3b205f5f6c6c5f77656273646b5f69753d25323266336530333532352d343439332d666561332d623636382d3839623434616536323034642532323b205f5f6c6c5f77656273646b5f6c63743d313434303636333237363232323b205f5f6c6c5f77656273646b5f6c6f743d313434303636333133383b205f5f6c6c5f77656273646b5f70613d313433393830363036363b2061635f70726566733d752533446a6f7375655f77656c63685f736f6c7325374366697273746e616d652533444a6f7375652537436c6173746e616d6525334457656c6368253743636379253344455552253743726567696f6e2533444945253743636f756e747279436f6465253344494525374372656d656d62657225334466616c73652537436465706f73697450726f6d707456616c7565253344302e30303b206c6f63616c79746963732e6a733d313b2050505f4c4f47494e3d2532426c5862475a5766364457557765484b7065347336343979575a63425770794f593525324674543562784758375749626d4f464a36416c6b7942253242477434696f6266306d316e747a4a4746772533442533443b20707049443d367730574f354d304b70702d5a5673684f69790d0a436f6e6e656374696f6e3a206b6565702d616c6976650d0a557365722d4167656e743a2050504e53706f727473626f6f6b556e6976657273616c2f302e31332e3020286950686f6e653b20694f5320382e312e313b205363616c652f322e3030290d0a0d0a7b2262657473223a5b7b2274797065223a2253474c222c227374616b655065724c696e65223a31302c226c656754797065223a2257222c226c656773223a5b7b22736f7274223a222d2d222c227061727473223a5b7b226f7574636f6d65223a32363934322c227072696365223a7b226e756d223a382c2264656e223a31312c2274797065223a224c227d7d5d7d5d7d5d2c226368616e6e656c223a2268222c22746f6b656e223a222b6c5862475a5766364457557765484b7065347336343979575a63425770794f59355c2f74543562784758375749626d4f464a36416c6b79422b477434696f6266306d316e747a4a4746773d3d227d"/>
+        </field>
+    </proto>
+    <proto name="http" showname="Hypertext Transfer Protocol" size="936" pos="0">
+        <field name="" show="POST /betslip/1.10/place HTTP/1.1\r\n" size="35" pos="0" value="504f5354202f626574736c69702f312e31302f706c61636520485454502f312e310d0a">
+            <field name="_ws.expert" showname="Expert Info (Chat/Sequence): POST /betslip/1.10/place HTTP/1.1\r\n" size="0" pos="0">
+                <field name="http.chat" showname="POST /betslip/1.10/place HTTP/1.1\r\n" size="0" pos="0" show="" value=""/>
+                <field name="_ws.expert.message" showname="Message: POST /betslip/1.10/place HTTP/1.1\r\n" hide="yes" size="0" pos="0" show="POST /betslip/1.10/place HTTP/1.1\r\n"/>
+                <field name="_ws.expert.severity" showname="Severity level: Chat" size="0" pos="0" show="2097152"/>
+                <field name="_ws.expert.group" showname="Group: Sequence" size="0" pos="0" show="33554432"/>
+            </field>
+            <field name="http.request.method" showname="Request Method: POST" size="4" pos="0" show="POST" value="504f5354"/>
+            <field name="http.request.uri" showname="Request URI: /betslip/1.10/place" size="19" pos="5" show="/betslip/1.10/place" value="2f626574736c69702f312e31302f706c616365"/>
+            <field name="http.request.version" showname="Request Version: HTTP/1.1" size="8" pos="25" show="HTTP/1.1" value="485454502f312e31"/>
+        </field>
+        <field name="http.host" showname="Host: api-qa03.test.tshark.com\r\n" size="36" pos="35" show="api-qa03.test.tshark.com" value="486f73743a206170692d716130332e746573742e7061646479706f7765722e636f6d0d0a"/>
+        <field name="http.request.line" showname="Host: api-qa03.test.tshark.com\r\n" hide="yes" size="36" pos="35" show="Host: api-qa03.test.tshark.com\xd\xa" value="486f73743a206170692d716130332e746573742e7061646479706f7765722e636f6d0d0a"/>
+        <field name="http.accept" showname="Accept: */*\r\n" size="13" pos="71" show="*/*" value="4163636570743a202a2f2a0d0a"/>
+        <field name="http.request.line" showname="Accept: */*\r\n" hide="yes" size="13" pos="71" show="Accept: */*\xd\xa" value="4163636570743a202a2f2a0d0a"/>
+        <field name="http.accept_encoding" showname="Accept-Encoding: gzip, deflate\r\n" size="32" pos="84" show="gzip, deflate" value="4163636570742d456e636f64696e673a20677a69702c206465666c6174650d0a"/>
+        <field name="http.request.line" showname="Accept-Encoding: gzip, deflate\r\n" hide="yes" size="32" pos="84" show="Accept-Encoding: gzip, deflate\xd\xa" value="4163636570742d456e636f64696e673a20677a69702c206465666c6174650d0a"/>
+        <field name="http.content_length_header" showname="Content-Length: 248\r\n" size="21" pos="116" show="248" value="436f6e74656e742d4c656e6774683a203234380d0a">
+            <field name="http.content_length" showname="Content length: 248" size="21" pos="116" show="248" value="436f6e74656e742d4c656e6774683a203234380d0a"/>
+        </field>
+        <field name="http.request.line" showname="Content-Length: 248\r\n" hide="yes" size="21" pos="116" show="Content-Length: 248\xd\xa" value="436f6e74656e742d4c656e6774683a203234380d0a"/>
+        <field name="http.content_type" showname="Content-Type: application/json\r\n" size="32" pos="137" show="application/json" value="436f6e74656e742d547970653a206170706c69636174696f6e2f6a736f6e0d0a"/>
+        <field name="http.request.line" showname="Content-Type: application/json\r\n" hide="yes" size="32" pos="137" show="Content-Type: application/json\xd\xa" value="436f6e74656e742d547970653a206170706c69636174696f6e2f6a736f6e0d0a"/>
+        <field name="http.accept_language" showname="Accept-Language: en;q=1\r\n" size="25" pos="169" show="en;q=1" value="4163636570742d4c616e67756167653a20656e3b713d310d0a"/>
+        <field name="http.request.line" showname="Accept-Language: en;q=1\r\n" hide="yes" size="25" pos="169" show="Accept-Language: en;q=1\xd\xa" value="4163636570742d4c616e67756167653a20656e3b713d310d0a"/>
+        <field name="http.cookie" showname=" [truncated]Cookie: __ll_websdk_cd={}; __ll_websdk_csi=31; __ll_websdk_csq=31; __ll_websdk_cst=1440663138; __ll_websdk_csu=%22fdd6a328-9c35-4ee4-1e74-f7e582a434db%22; __ll_websdk_fl=[]; __ll_websdk_ids={}; __ll_websdk_iu=%22f3e03525-4493-f" size="641" pos="194" show="__ll_websdk_cd={}; __ll_websdk_csi=31; __ll_websdk_csq=31; __ll_websdk_cst=1440663138; __ll_websdk_csu=%22fdd6a328-9c35-4ee4-1e74-f7e582a434db%22; __ll_websdk_fl=[]; __ll_websdk_ids={}; __ll_websdk_iu=%22f3e03525-4493-fea3-b668-89b44ae6204d%22; __ll_websdk_lct=1440663276222; __ll_websdk_lot=1440663138; __ll_websdk_pa=1439806066; ac_prefs=u%3Djosue_welch_sols%7Cfirstname%3DJosue%7Clastname%3DWelch%7Cccy%3DEUR%7Cregion%3DIE%7CcountryCode%3DIE%7Cremember%3Dfalse%7CdepositPromptValue%3D0.00; localytics.js=1; PP_LOGIN=%2BlXbGZWf6DWUweHKpe4s649yWZcBWpyOY5%2FtT5bxGX7WIbmOFJ6AlkyB%2BGt4iobf0m1ntzJGFw%3D%3D; ppID=6w0WO5M0Kpp-ZVshOiy" value="436f6f6b69653a205f5f6c6c5f77656273646b5f63643d7b7d3b205f5f6c6c5f77656273646b5f6373693d33313b205f5f6c6c5f77656273646b5f6373713d33313b205f5f6c6c5f77656273646b5f6373743d313434303636333133383b205f5f6c6c5f77656273646b5f6373753d25323266646436613332382d396333352d346565342d316537342d6637653538326134333464622532323b205f5f6c6c5f77656273646b5f666c3d5b5d3b205f5f6c6c5f77656273646b5f6964733d7b7d3b205f5f6c6c5f77656273646b5f69753d25323266336530333532352d343439332d666561332d623636382d3839623434616536323034642532323b205f5f6c6c5f77656273646b5f6c63743d313434303636333237363232323b205f5f6c6c5f77656273646b5f6c6f743d313434303636333133383b205f5f6c6c5f77656273646b5f70613d313433393830363036363b2061635f70726566733d752533446a6f7375655f77656c63685f736f6c7325374366697273746e616d652533444a6f7375652537436c6173746e616d6525334457656c6368253743636379253344455552253743726567696f6e2533444945253743636f756e747279436f6465253344494525374372656d656d62657225334466616c73652537436465706f73697450726f6d707456616c7565253344302e30303b206c6f63616c79746963732e6a733d313b2050505f4c4f47494e3d2532426c5862475a5766364457557765484b7065347336343979575a63425770794f593525324674543562784758375749626d4f464a36416c6b7942253242477434696f6266306d316e747a4a4746772533442533443b20707049443d367730574f354d304b70702d5a5673684f69790d0a">
+            <field name="http.cookie_pair" showname="Cookie pair: __ll_websdk_cd={}" size="17" pos="202" show="__ll_websdk_cd={}" value="5f5f6c6c5f77656273646b5f63643d7b7d"/>
+            <field name="http.cookie_pair" showname="Cookie pair: __ll_websdk_csi=31" size="18" pos="221" show="__ll_websdk_csi=31" value="5f5f6c6c5f77656273646b5f6373693d3331"/>
+            <field name="http.cookie_pair" showname="Cookie pair: __ll_websdk_csq=31" size="18" pos="241" show="__ll_websdk_csq=31" value="5f5f6c6c5f77656273646b5f6373713d3331"/>
+            <field name="http.cookie_pair" showname="Cookie pair: __ll_websdk_cst=1440663138" size="26" pos="261" show="__ll_websdk_cst=1440663138" value="5f5f6c6c5f77656273646b5f6373743d31343430363633313338"/>
+            <field name="http.cookie_pair" showname="Cookie pair: __ll_websdk_csu=%22fdd6a328-9c35-4ee4-1e74-f7e582a434db%22" size="58" pos="289" show="__ll_websdk_csu=%22fdd6a328-9c35-4ee4-1e74-f7e582a434db%22" value="5f5f6c6c5f77656273646b5f6373753d25323266646436613332382d396333352d346565342d316537342d663765353832613433346462253232"/>
+            <field name="http.cookie_pair" showname="Cookie pair: __ll_websdk_fl=[]" size="17" pos="349" show="__ll_websdk_fl=[]" value="5f5f6c6c5f77656273646b5f666c3d5b5d"/>
+            <field name="http.cookie_pair" showname="Cookie pair: __ll_websdk_ids={}" size="18" pos="368" show="__ll_websdk_ids={}" value="5f5f6c6c5f77656273646b5f6964733d7b7d"/>
+            <field name="http.cookie_pair" showname="Cookie pair: __ll_websdk_iu=%22f3e03525-4493-fea3-b668-89b44ae6204d%22" size="57" pos="388" show="__ll_websdk_iu=%22f3e03525-4493-fea3-b668-89b44ae6204d%22" value="5f5f6c6c5f77656273646b5f69753d25323266336530333532352d343439332d666561332d623636382d383962343461653632303464253232"/>
+            <field name="http.cookie_pair" showname="Cookie pair: __ll_websdk_lct=1440663276222" size="29" pos="447" show="__ll_websdk_lct=1440663276222" value="5f5f6c6c5f77656273646b5f6c63743d31343430363633323736323232"/>
+            <field name="http.cookie_pair" showname="Cookie pair: __ll_websdk_lot=1440663138" size="26" pos="478" show="__ll_websdk_lot=1440663138" value="5f5f6c6c5f77656273646b5f6c6f743d31343430363633313338"/>
+            <field name="http.cookie_pair" showname="Cookie pair: __ll_websdk_pa=1439806066" size="25" pos="506" show="__ll_websdk_pa=1439806066" value="5f5f6c6c5f77656273646b5f70613d31343339383036303636"/>
+            <field name="http.cookie_pair" showname="Cookie pair: ac_prefs=u%3Djosue_welch_sols%7Cfirstname%3DJosue%7Clastname%3DWelch%7Cccy%3DEUR%7Cregion%3DIE%7CcountryCode%3DIE%7Cremember%3Dfalse%7CdepositPromptValue%3D0.00" size="160" pos="533" show="ac_prefs=u%3Djosue_welch_sols%7Cfirstname%3DJosue%7Clastname%3DWelch%7Cccy%3DEUR%7Cregion%3DIE%7CcountryCode%3DIE%7Cremember%3Dfalse%7CdepositPromptValue%3D0.00" value="61635f70726566733d752533446a6f7375655f77656c63685f736f6c7325374366697273746e616d652533444a6f7375652537436c6173746e616d6525334457656c6368253743636379253344455552253743726567696f6e2533444945253743636f756e747279436f6465253344494525374372656d656d62657225334466616c73652537436465706f73697450726f6d707456616c7565253344302e3030"/>
+            <field name="http.cookie_pair" showname="Cookie pair: localytics.js=1" size="15" pos="695" show="localytics.js=1" value="6c6f63616c79746963732e6a733d31"/>
+            <field name="http.cookie_pair" showname="Cookie pair: PP_LOGIN=%2BlXbGZWf6DWUweHKpe4s649yWZcBWpyOY5%2FtT5bxGX7WIbmOFJ6AlkyB%2BGt4iobf0m1ntzJGFw%3D%3D" size="95" pos="712" show="PP_LOGIN=%2BlXbGZWf6DWUweHKpe4s649yWZcBWpyOY5%2FtT5bxGX7WIbmOFJ6AlkyB%2BGt4iobf0m1ntzJGFw%3D%3D" value="50505f4c4f47494e3d2532426c5862475a5766364457557765484b7065347336343979575a63425770794f593525324674543562784758375749626d4f464a36416c6b7942253242477434696f6266306d316e747a4a474677253344253344"/>
+            <field name="http.cookie_pair" showname="Cookie pair: ppID=6w0WO5M0Kpp-ZVshOiy" size="24" pos="809" show="ppID=6w0WO5M0Kpp-ZVshOiy" value="707049443d367730574f354d304b70702d5a5673684f6979"/>
+        </field>
+        <field name="http.request.line" showname=" [truncated]Cookie: __ll_websdk_cd={}; __ll_websdk_csi=31; __ll_websdk_csq=31; __ll_websdk_cst=1440663138; __ll_websdk_csu=%22fdd6a328-9c35-4ee4-1e74-f7e582a434db%22; __ll_websdk_fl=[]; __ll_websdk_ids={}; __ll_websdk_iu=%22f3e03525-4493-f" hide="yes" size="641" pos="194" show="Cookie: __ll_websdk_cd={}; __ll_websdk_csi=31; __ll_websdk_csq=31; __ll_websdk_cst=1440663138; __ll_websdk_csu=%22fdd6a328-9c35-4ee4-1e74-f7e582a434db%22; __ll_websdk_fl=[]; __ll_websdk_ids={}; __ll_websdk_iu=%22f3e03525-4493-fea3-b668-89b44ae6204d%22; __ll_websdk_lct=1440663276222; __ll_websdk_lot=1440663138; __ll_websdk_pa=1439806066; ac_prefs=u%3Djosue_welch_sols%7Cfirstname%3DJosue%7Clastname%3DWelch%7Cccy%3DEUR%7Cregion%3DIE%7CcountryCode%3DIE%7Cremember%3Dfalse%7CdepositPromptValue%3D0.00; localytics.js=1; PP_LOGIN=%2BlXbGZWf6DWUweHKpe4s649yWZcBWpyOY5%2FtT5bxGX7WIbmOFJ6AlkyB%2BGt4iobf0m1ntzJGFw%3D%3D; ppID=6w0WO5M0Kpp-ZVshOiy\xd\xa" value="436f6f6b69653a205f5f6c6c5f77656273646b5f63643d7b7d3b205f5f6c6c5f77656273646b5f6373693d33313b205f5f6c6c5f77656273646b5f6373713d33313b205f5f6c6c5f77656273646b5f6373743d313434303636333133383b205f5f6c6c5f77656273646b5f6373753d25323266646436613332382d396333352d346565342d316537342d6637653538326134333464622532323b205f5f6c6c5f77656273646b5f666c3d5b5d3b205f5f6c6c5f77656273646b5f6964733d7b7d3b205f5f6c6c5f77656273646b5f69753d25323266336530333532352d343439332d666561332d623636382d3839623434616536323034642532323b205f5f6c6c5f77656273646b5f6c63743d313434303636333237363232323b205f5f6c6c5f77656273646b5f6c6f743d313434303636333133383b205f5f6c6c5f77656273646b5f70613d313433393830363036363b2061635f70726566733d752533446a6f7375655f77656c63685f736f6c7325374366697273746e616d652533444a6f7375652537436c6173746e616d6525334457656c6368253743636379253344455552253743726567696f6e2533444945253743636f756e747279436f6465253344494525374372656d656d62657225334466616c73652537436465706f73697450726f6d707456616c7565253344302e30303b206c6f63616c79746963732e6a733d313b2050505f4c4f47494e3d2532426c5862475a5766364457557765484b7065347336343979575a63425770794f593525324674543562784758375749626d4f464a36416c6b7942253242477434696f6266306d316e747a4a4746772533442533443b20707049443d367730574f354d304b70702d5a5673684f69790d0a"/>
+        <field name="http.connection" showname="Connection: keep-alive\r\n" size="24" pos="835" show="keep-alive" value="436f6e6e656374696f6e3a206b6565702d616c6976650d0a"/>
+        <field name="http.request.line" showname="Connection: keep-alive\r\n" hide="yes" size="24" pos="835" show="Connection: keep-alive\xd\xa" value="436f6e6e656374696f6e3a206b6565702d616c6976650d0a"/>
+        <field name="http.user_agent" showname="User-Agent: PPNSportsbookUniversal/0.13.0 (iPhone; iOS 8.1.1; Scale/2.00)\r\n" size="75" pos="859" show="PPNSportsbookUniversal/0.13.0 (iPhone; iOS 8.1.1; Scale/2.00)" value="557365722d4167656e743a2050504e53706f727473626f6f6b556e6976657273616c2f302e31332e3020286950686f6e653b20694f5320382e312e313b205363616c652f322e3030290d0a"/>
+        <field name="http.request.line" showname="User-Agent: PPNSportsbookUniversal/0.13.0 (iPhone; iOS 8.1.1; Scale/2.00)\r\n" hide="yes" size="75" pos="859" show="User-Agent: PPNSportsbookUniversal/0.13.0 (iPhone; iOS 8.1.1; Scale/2.00)\xd\xa" value="557365722d4167656e743a2050504e53706f727473626f6f6b556e6976657273616c2f302e31332e3020286950686f6e653b20694f5320382e312e313b205363616c652f322e3030290d0a"/>
+        <field name="" show="\r\n" size="2" pos="934" value="0d0a"/>
+        <field name="http.request.full_uri" showname="Full request URI: http://api-qa03.test.tshark.com/betslip/1.10/place" size="0" pos="0" show="http://api-qa03.test.tshark.com/betslip/1.10/place"/>
+        <field name="http.request" showname="Request: True" hide="yes" size="0" pos="0" show="1"/>
+        <field name="" show="HTTP request 2/2" size="0" pos="0"/>
+        <field name="http.prev_request_in" showname="Prev request in frame: 125" size="0" pos="0" show="125"/>
+    </proto>
+    <proto name="json" showname="JavaScript Object Notation: application/json" size="248" pos="936">
+        <field name="json.object" showname="Object" size="248" pos="936" show="" value="">
+            <field name="json.member" showname="Member Key: &quot;bets&quot;" size="144" pos="937" show="" value="">
+                <field name="json.array" showname="Array" size="137" pos="944" show="" value="">
+                    <field name="json.object" showname="Object" size="135" pos="945" show="" value="">
+                        <field name="json.member" showname="Member Key: &quot;type&quot;" size="12" pos="946" show="" value="">
+                            <field name="json.value.string" showname="String value: SGL" size="5" pos="953" show="SGL" value="2253474c22"/>
+                        </field>
+                        <field name="json.member" showname="Member Key: &quot;stakePerLine&quot;" size="17" pos="959" show="" value="">
+                            <field name="json.value.number" showname="Number value: 10" size="2" pos="974" show="10" value="3130"/>
+                        </field>
+                        <field name="json.member" showname="Member Key: &quot;legType&quot;" size="13" pos="977" show="" value="">
+                            <field name="json.value.string" showname="String value: W" size="3" pos="987" show="W" value="225722"/>
+                        </field>
+                        <field name="json.member" showname="Member Key: &quot;legs&quot;" size="88" pos="991" show="" value="">
+                            <field name="json.array" showname="Array" size="81" pos="998" show="" value="">
+                                <field name="json.object" showname="Object" size="79" pos="999" show="" value="">
+                                    <field name="json.member" showname="Member Key: &quot;sort&quot;" size="11" pos="1000" show="" value="">
+                                        <field name="json.value.string" showname="String value: --" size="4" pos="1007" show="--" value="222d2d22"/>
+                                    </field>
+                                    <field name="json.member" showname="Member Key: &quot;parts&quot;" size="65" pos="1012" show="" value="">
+                                        <field name="json.array" showname="Array" size="57" pos="1020" show="" value="">
+                                            <field name="json.object" showname="Object" size="55" pos="1021" show="" value="">
+                                                <field name="json.member" showname="Member Key: &quot;outcome&quot;" size="15" pos="1022" show="" value="">
+                                                    <field name="json.value.number" showname="Number value: 26942" size="5" pos="1032" show="26942" value="3236393432"/>
+                                                </field>
+                                                <field name="json.member" showname="Member Key: &quot;price&quot;" size="37" pos="1038" show="" value="">
+                                                    <field name="json.object" showname="Object" size="29" pos="1046" show="" value="">
+                                                        <field name="json.member" showname="Member Key: &quot;num&quot;" size="7" pos="1047" show="" value="">
+                                                            <field name="json.value.number" showname="Number value: 8" size="1" pos="1053" show="8" value="38"/>
+                                                        </field>
+                                                        <field name="json.member" showname="Member Key: &quot;den&quot;" size="8" pos="1055" show="" value="">
+                                                            <field name="json.value.number" showname="Number value: 11" size="2" pos="1061" show="11" value="3131"/>
+                                                        </field>
+                                                        <field name="json.member" showname="Member Key: &quot;type&quot;" size="10" pos="1064" show="" value="">
+                                                            <field name="json.value.string" showname="String value: L" size="3" pos="1071" show="L" value="224c22"/>
+                                                        </field>
+                                                    </field>
+                                                </field>
+                                            </field>
+                                        </field>
+                                    </field>
+                                </field>
+                            </field>
+                        </field>
+                    </field>
+                </field>
+            </field>
+            <field name="json.member" showname="Member Key: &quot;channel&quot;" size="13" pos="1082" show="" value="">
+                <field name="json.value.string" showname="String value: h" size="3" pos="1092" show="h" value="226822"/>
+            </field>
+            <field name="json.member" showname="Member Key: &quot;token&quot;" size="87" pos="1096" show="" value="">
+                <field name="json.value.string" showname="String value: +lXbGZWf6DWUweHKpe4s649yWZcBWpyOY5/tT5bxGX7WIbmOFJ6AlkyB+Gt4iobf0m1ntzJGFw==" size="79" pos="1104" show="+lXbGZWf6DWUweHKpe4s649yWZcBWpyOY5/tT5bxGX7WIbmOFJ6AlkyB+Gt4iobf0m1ntzJGFw==" value="222b6c5862475a5766364457557765484b7065347336343979575a63425770794f59355c2f74543562784758375749626d4f464a36416c6b79422b477434696f6266306d316e747a4a4746773d3d22"/>
+            </field>
+        </field>
+    </proto>
+</packet>
+
+

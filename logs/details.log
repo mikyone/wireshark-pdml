@@ -1,0 +1,16 @@
+2016-07-20 14:05:43,307 DEBUG c.t.a.p.PdmlConfiguration input file to open :</Users/onicolas/dev/projects/wireshark-pdml/src/test/resources/PdmlConfiguration.xml>
+2016-07-20 14:05:43,552 DEBUG c.t.a.p.PdmlConfiguration separator: <|>
+2016-07-20 14:05:43,557 DEBUG c.t.a.p.PdmlConfiguration filter :name: <http.request.uri> type: <FIELD> convertor: <defaultField>
+2016-07-20 14:05:43,558 DEBUG c.t.a.p.PdmlConfiguration filter :name: <json> type: <PROTOCOL> convertor: <defaultProtocol>
+2016-07-20 14:05:43,558 DEBUG c.t.a.p.PdmlConfiguration ouput :name: <timestamp> type: <FIELD> convertor: <defaultField>
+2016-07-20 14:05:43,558 DEBUG c.t.a.p.PdmlConfiguration ouput :name: <http.request.method> type: <FIELD> convertor: <defaultField>
+2016-07-20 14:05:43,559 DEBUG c.t.a.p.PdmlConfiguration ouput :name: <http.request.uri> type: <FIELD> convertor: <defaultField>
+2016-07-20 14:05:43,560 DEBUG c.t.a.p.PdmlConfiguration ouput :name: <json> type: <PROTOCOL> convertor: <jsonConvertor>
+2016-07-20 14:05:43,560 DEBUG c.t.a.p.PdmlConfiguration input file to open :</Users/onicolas/dev/projects/wireshark-pdml/src/test/resources/pdml.xml>
+2016-07-20 14:05:43,680 DEBUG c.t.a.p.r.ReportMaker 1) Rejected packet
+2016-07-20 14:05:43,681 DEBUG c.t.a.p.r.ReportMaker   >  Reason : Expected to apply this filter <http.request.uri=/betslip/1.10/place> but the value was </accounts/1.2/checkuserstatus>
+2016-07-20 14:05:43,681 DEBUG c.t.a.p.r.ReportMaker   >  Reason : Applied this filter  <http.request.uri=/betslip/1.10/place>  <json=JavaScript Object Notation: application/json>  but no value has been found
+2016-07-20 14:05:43,897 DEBUG c.t.a.p.r.ReportMaker 2) Handled packet number 
+2016-07-20 14:05:43,897 INFO c.t.a.p.r.ReportMaker Aug 27, 2015 10:51:52.273325000 IST|POST|/betslip/1.10/place|{"bets":[{"type":'SGL',"stakePerLine":'5',"legType":'W',"legs":[{"sort":'--',"parts":[{"outcome":'26942',"price":{"num":'8',"den":'11',"type":'L'}}]}]}]"channel":'h',"token":'+lXbGZWf6DWUweHKpe4s649yWZcBWpyOY5/tT5bxGX7WIbmOFJ6AlkyB+Gt4iobf0m1ntzJGFw=='}
+2016-07-20 14:05:43,946 DEBUG c.t.a.p.r.ReportMaker 3) Handled packet number 
+2016-07-20 14:05:43,946 INFO c.t.a.p.r.ReportMaker Aug 27, 2015 10:51:59.095329000 IST|POST|/betslip/1.10/place|{"bets":[{"type":'SGL',"stakePerLine":'10',"legType":'W',"legs":[{"sort":'--',"parts":[{"outcome":'26942',"price":{"num":'8',"den":'11',"type":'L'}}]}]}]"channel":'h',"token":'+lXbGZWf6DWUweHKpe4s649yWZcBWpyOY5/tT5bxGX7WIbmOFJ6AlkyB+Gt4iobf0m1ntzJGFw=='}
