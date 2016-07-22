@@ -59,19 +59,19 @@ public class PdmlConfigurationTest {
         configuration.setInputFile(packetPath);
         configuration.setSeparator(",");
         configuration.setFilters(Arrays.asList(getParameter("http.request.uri", "POST")));
-        configuration.setOutputs(Arrays.asList(getParameter("http.request.uri", "POST", "defaultField", "field"),
-                                               getParameter("http.request.uri", "POST", "jsonConvertor", "protocol"),
-                                               getParameter("http.request.uri", "GET", null, null)));
+        configuration.setOutputs(Arrays.asList(getParameter("http.request.uri", "POST", "field","defaultField"),
+                                               getParameter("http.request.uri", "POST", "protocol", "jsonConvertor"),
+                                               getParameter("http.request.uri", "GET")));
 
         return configuration;
     }
 
     private Parameter getParameter(String name, String value) {
-        return getParameter(name, value, null, null);
+        return getParameter(name, value, "field", null);
 
     }
 
-    private Parameter getParameter(String name, String value, String convertor, String type) {
+    private Parameter getParameter(String name, String value,  String type, String convertor) {
         Parameter p = new Parameter();
         p.setName(name);
         p.setValue(value);

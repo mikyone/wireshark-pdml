@@ -56,8 +56,8 @@ public class Parser<T> {
     }
 
 
-    public Parser<T> limit(int limit){
-        this.limit= limit;
+    public Parser<T> limit(Optional<Integer> limit){
+        this.limit= limit.orElse(0);
         return this;
     }
 
@@ -88,14 +88,11 @@ public class Parser<T> {
 
 
     private boolean reachTheLimit() {
-        return limit != 0 && metrics.getMatches().size() >= limit ? true:false;
+        return limit != 0 && metrics.getMatches().size() >= limit;
     }
 
     private boolean stopOnUnMatch() {
-        if(hasToMatch) {
-            return metrics.getNotMatches().size()  > 0;
-        }
-        return false;
+        return hasToMatch ? metrics.getNotMatches().size()  > 0 : false;
     }
 
     private void processField(Map<String, List<T>> map, Field field, List<PdmlXmlElement> pdmlXmlElements) {

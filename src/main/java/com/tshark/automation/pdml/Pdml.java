@@ -79,12 +79,12 @@ public class Pdml {
 
 
 
-    private boolean filter(Packet packet, PdmlConfiguration config) {
-        if(!config.getFilters().isEmpty()) {
-            Parser<String>parser = Parser.get(config.getFilter());
-            Map<String, List<String>> keyFields = parser.hasToMatch(true).lookFor(packet, config.getXmlFilters());
+    private boolean filter(Packet packet, PdmlConfiguration cfg) {
+        if(!cfg.getFilters().isEmpty()) {
+            Parser<String>parser = Parser.get(cfg.getFilter());
+            Map<String, List<String>> keyFields = parser.hasToMatch(true).limit(cfg.getLimit()).lookFor(packet, cfg.getXmlFilters());
             if(parser.getMetrics().getNotMatches().size()>0 || parser.getMetrics().getMatches().size() == 0){
-                config.getReportMaker().filterCurrentLine(config.getFilters(), parser.getMetrics());
+                cfg.getReportMaker().filterCurrentLine(cfg.getFilters(), parser.getMetrics());
                 return true;
             }
         }

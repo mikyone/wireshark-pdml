@@ -19,10 +19,7 @@ import org.apache.logging.log4j.Logger;
 import javax.xml.bind.JAXBException;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by onicolas on 31/08/2015.
@@ -34,7 +31,7 @@ public class PdmlConfiguration {
 
     private File inputFile;
     private String separator;
-
+    private Optional<Integer> limit;
 
     private Map<String, String> filters = new HashMap<>();
 
@@ -61,6 +58,7 @@ public class PdmlConfiguration {
 
     private void check(Configuration configuration) {
         checkSeparator(configuration);
+        checkLimit(configuration);
         checkFilter(configuration);
         checkOutputs(configuration);
         inputFile = checkFile(configuration.getInputFile());
@@ -68,9 +66,16 @@ public class PdmlConfiguration {
     }
 
 
+    private void checkLimit(Configuration configuration){
+        limit = Optional.ofNullable(configuration.getLimit());
+        logger.debug("limit :" + configuration.getLimit());
+
+    }
+
+
     private void checkOutputs(Configuration configuration) {
         for (Parameter parameter : configuration.getOutputs()) {
-            TypePdmlXmlElement typePdmlXmlElement = parameter.getType() != null ? TypePdmlXmlElement.getXmlType(parameter.getType()) : TypePdmlXmlElement.FIELD;
+            TypePdmlXmlElement typePdmlXmlElement = TypePdmlXmlElement.getXmlType(parameter.getType());
             PdmlXmlElement xmlElement = PdmlXmlElement.get(parameter.getName(), typePdmlXmlElement, getConvertor(parameter, typePdmlXmlElement));
             if(typePdmlXmlElement == TypePdmlXmlElement.FIELD){
                 xmlFields.add(xmlElement);
@@ -92,7 +97,7 @@ public class PdmlConfiguration {
         if (arguments.getFilters() != null && !arguments.getFilters().isEmpty()) {
             for (Parameter parameter : arguments.getFilters()) {
                 filters.put(parameter.getName(), parameter.getValue());
-                TypePdmlXmlElement typePdmlXmlElement = parameter.getType() != null ? TypePdmlXmlElement.getXmlType(parameter.getType()) : TypePdmlXmlElement.FIELD;
+                TypePdmlXmlElement typePdmlXmlElement = TypePdmlXmlElement.getXmlType(parameter.getType());
                 PdmlXmlElement xmlFilter = PdmlXmlElement.get(parameter.getName(), typePdmlXmlElement, getConvertor(parameter, typePdmlXmlElement));
                 xmlFilters.add(xmlFilter);
                 logger.debug("filter :" + xmlFilter.toString());

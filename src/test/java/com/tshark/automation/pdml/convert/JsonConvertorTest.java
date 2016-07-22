@@ -19,28 +19,28 @@ public class JsonConvertorTest {
     public void serializeJsonMember(){
         Protocol protocol = getProtocol(getMemberValue());
         String json = JsonConvertor.get().convert(protocol);
-        Assert.assertEquals("\"bets\":'SGL'", json);
+        Assert.assertEquals("\"bets\":\"SGL\"", json);
     }
 
     @Test
     public void serializeJsonObject(){
         Protocol protocol = getProtocol(getObject(getMemberValue()));
         String json = JsonConvertor.get().convert(protocol);
-        Assert.assertEquals("{\"bets\":'SGL'}", json);
+        Assert.assertEquals("{\"bets\":\"SGL\"}", json);
     }
 
     @Test
     public void serializeJsonArray(){
         Protocol protocol = getProtocol(getArray(getObject(getMemberValue()), getObject(getMemberValue())));
         String json = JsonConvertor.get().convert(protocol);
-        Assert.assertEquals("[{\"bets\":'SGL'},{\"bets\":'SGL'}]", json);
+        Assert.assertEquals("[{\"bets\":\"SGL\"},{\"bets\":\"SGL\"}]", json);
     }
 
     @Test
     public void serializeComplex(){
         Protocol protocol = getProtocol(getObjectMember(getArray(getObject(getMemberValue()), getObject(getMemberValue()))));
         String json = JsonConvertor.get().convert(protocol);
-        Assert.assertEquals("{\"boubou\":[{\"bets\":'SGL'},{\"bets\":'SGL'}]}", json);
+        Assert.assertEquals("{\"boubou\":[{\"bets\":\"SGL\"},{\"bets\":\"SGL\"}]}", json);
     }
 
     private Protocol getProtocol(Field... fields){

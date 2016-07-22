@@ -21,6 +21,10 @@ public class Configuration {
     @XmlElement(name="separator")
     private String separator;
 
+    @XmlElement(name="limit")
+    private Integer limit;
+
+
     @XmlElement(required = false,name="filter")
     @XmlElementWrapper(name= "filters")
     private List<Parameter> filters;

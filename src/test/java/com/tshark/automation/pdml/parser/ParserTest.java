@@ -56,7 +56,7 @@ public class ParserTest extends Fixture {
         PdmlXmlElement pdmlXmlElement = PdmlXmlElement.get("http.cookie_pair");
         String key = pdmlXmlElement.getName();
         Parser<Token> parser = Parser.get(ProcessFieldFactory.process(Arrays.asList(pdmlXmlElement), xmlProtocols));
-        Map<String, List<Token>> maps = parser.limit(10).lookFor(packet, Arrays.asList(pdmlXmlElement));
+        Map<String, List<Token>> maps = parser.limit(Optional.of(10)).lookFor(packet, Arrays.asList(pdmlXmlElement));
         Assert.assertEquals(10, maps.get(key).size());
         Assert.assertEquals("__ll_websdk_cd={}", maps.get(key).get(0).getValue());
         Assert.assertEquals("__ll_websdk_lot=1440663138", maps.get(key).get(9).getValue());

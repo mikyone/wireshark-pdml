@@ -29,7 +29,7 @@ public class PdmlTest extends Fixture {
     }
 
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     //false
     public static void test() throws IOException, URISyntaxException, JAXBException {
         String path= Pdml.class.getClassLoader().getResource("PdmlConfiguration.xml").getPath();

@@ -18,16 +18,17 @@ public class JsonConvertor implements  Convertor<Protocol>{
 
     public static final String JSON_PROTOCOL = "json";
 
-     public Optional<String> convert(Packet packet) {
-        Optional <Protocol>protocol = packet.getProtocols().stream().filter(s -> JSON_PROTOCOL.equals(s.getName())).findAny();
+
+    public Optional<String> convert(Packet packet) {
+        Optional<Protocol>protocol = packet.getProtocols().stream().filter(s -> s.getName().equals(JSON_PROTOCOL)).findAny();
         if(!protocol.isPresent()){
             return Optional.empty();
         }
-        return Optional.of(buildObject(protocol.get().getFields()));
+        return Optional.of(Utils.trim(buildObject(protocol.get().getFields())));
     }
 
     public String convert(Protocol protocol) {
-        return buildObject(protocol.getFields());
+        return Utils.trim(buildObject(protocol.getFields()));
     }
 
     @Override
@@ -38,43 +39,28 @@ public class JsonConvertor implements  Convertor<Protocol>{
     private String buildObject(List<Field> fields) {
         String concat = "";
         for (Field field : fields) {
-            JsonDescriptionField descriptionField = JsonDescriptionField.get(field.getName());
-            String value = "";
-            switch (descriptionField) {
+            switch (JsonDescriptionField.get(field.getName())) {
                 case OBJECT:
-                    value = Utils.trim(buildObject(field.getFields()));
-                    concat += "{" + value + "},";
+                    concat += "{" + Utils.trim(buildObject(field.getFields()))+ "},";
                     break;
                 case ARRAY:
-                    value =  Utils.trim(buildObject(field.getFields()));
-                    concat += "[" + value + "],";
+                    concat += "[" + Utils.trim(buildObject(field.getFields())) + "],";
                     break;
                 case MEMBER:
-                    value = Utils.trim(buildObject(field.getFields()));
-                    concat += getFieldMember(field) + ":" + value ;
+                    concat += getFieldMember(field) + ":" + buildObject(field.getFields()) ;
                     break;
                 case VALUE:
-                    return "'"+ field.getShow() + "',,";
+                    return "\""+ field.getShow() + "\",";
                 default:
-                    throw new IllegalArgumentException("Description unknown " + descriptionField);
+                    throw new IllegalArgumentException("Description unknown " + JsonDescriptionField.get(field.getName()));
             }
-            ;
         }
-        return Utils.trimComma(concat);
+        return concat;
     }
 
 
 
-    @Data
-    static class JsonRaw{
-        private final boolean isRawValue;
-
-        public static JsonRaw get(boolean isRaw) {
-            return new JsonRaw(isRaw);
-        }
-    }
-
-    String getFieldMember(Field f) {
+    private String getFieldMember(Field f) {
         String name = Utils.extractKey(f).trim();
         return StringEscapeUtils.unescapeHtml4(name);
     }
